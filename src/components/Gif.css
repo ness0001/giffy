@@ -1,0 +1,42 @@
+
+.Gif
+{
+border: 1px solid #eee;
+border-radius: 6px;
+color: #fff;
+text-decoration: none;
+display: flex;
+flex-direction: column;
+margin: 16px;
+width: 100%;
+/* padding: 32px; */
+}
+.Gif
+
+.Gif h4{
+    margin:0;
+}
+
+.Gif img {
+    object-fit: contain;
+}
+a{
+    color: #09f;
+    font-size: 32px;
+}
+.loading{
+    border: 4px solid rgba(0,0,0,.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s ease infinite;
+  }
+  @keyframes spin{
+    0%{
+        transform:  rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
