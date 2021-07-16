@@ -2,7 +2,6 @@ const apiKey = 'VcKLzDSenDDMHEJDoVTk5WARJXzNweT1'
 
 
 export default function getGifs({keyword = 'hack coding'}={}) {
-    console.log(keyword);
     const apiURL = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${keyword}&limit=10&offset=0&rating=r&lang=en`
     return fetch(apiURL)
     .then(res=> res.json())
